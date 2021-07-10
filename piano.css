@@ -1,265 +1,140 @@
 body{
-    margin: 0;
-    padding: 0;
-    display: flex;
-    height: 100vh;
-    justify-content: center;
-    align-items: center;
-    background-color: burlywood;
-    box-sizing: border-box;
-
+    margin:0;
+    padding:0;
+display: flex;
+justify-content: center;
+align-items: center;
+height: 100vh;
+background-color: blueviolet;
 }
- .heading{
-    color: white;
-    text-transform: uppercase;
+ .pianoContainer{
+    width:600px;
+    height: 242px;
+   background-color: #000;
+   box-shadow: 0 0 6px #fff;
+}
+.heading{
+    color: #fff;
     text-align: center;
-    text-shadow: 0 0 8px #fff;
-    background-color: #000;
-    
+    text-transform: uppercase;
+    text-shadow: 0 0 3.5px  #fff;
 }
-
-.pianoContainer{
-    width: 565px;
-    height: 250px;
-    border: 1px solid ;
-    background-color: #000;
-    border-radius: 5px;
-    box-shadow: 0 0 8px  #000;
-}
-
-.pianowhitekey{
-    
-    width: 100%;
-    height: 50%;
-    position: relative;
-    display: flex;
-    justify-content: space-evenly;
+.pianokey{
+   width:100%;
+   height: 50%;
+   
+   display: flex;
+   
 }
 .whitekey{
-    width: 50px;
-    height: 100%;
-    background-color: #fff;
-    text-align: center;
-     box-shadow: 0 1px 3px  #fff;
-     border-bottom-left-radius: 4px;
-    border-bottom-right-radius: 4px;
-    }
-    span{
-        display: inline-block;
-        margin-top: 100px;
-        
-    }
-     .black{
-        margin-top: 42px;
-        color: #fff;
-
-    }
-   .pianoblackkey{
-    
     width: 100%;
-    height: 25%;
-    position: relative;
-    
-     text-align: center;    
-    top:-125px;
-    left: 13px;
-
-    
+    height: 100%;
+    background-color:#fff;
+    border: 2px solid #000;
+    border-bottom: 0;
+    box-sizing: border-box;
+   
+   
+}
+.pianokey div:last-child{
+    width: 85%;
 }
 .blackkey{
-    width: 40px;
-    height: 100%;
-    background-color:#000;
-    margin-top: -2px;
-    margin-left: 20px;
-    z-index: 15;
-   
+    width: 50%;
+    height: 53%;
+    background-color: #000;
+    margin-left: -30px;
+    margin-right: -20px;
+    z-index: 10;
     border-bottom-left-radius: 4px;
     border-bottom-right-radius: 4px;
-}
-.pianoblackkey div:nth-child(1){
-    top:0
 
 }
-.pianoblackkey div:nth-child(2){
-    margin-left:80px;
-   margin-top: -62px;
-}
-.pianoblackkey div:nth-child(3){
-    margin-left:140px;
-    margin-top: -63px;
-} 
-.pianoblackkey div:nth-child(4){
-    margin-left:195px;
-    margin-top: -63px;
-
-} 
-.pianoblackkey div:nth-child(5){
-    margin-left:250px;
-    margin-top: -63px;
-
-} 
-.pianoblackkey div:nth-child(6){
-    margin-left:305px;
-    margin-top: -61px;
-
-} 
-.pianoblackkey div:nth-child(7){
-    margin-left:360px;
-    margin-top: -63px;
-
-} 
-.pianoblackkey div:nth-child(8){
-    margin-left:415px;
-    margin-top: -63px;
-
-} 
-.pianoblackkey div:nth-child(9){
-    margin-left:475px;
-    margin-top: -62px;
-
-} 
-
-.active{
-    background-color:grey;
-} 
-@media screen and (max-width:610px) {
-.pianoContainer{
+span{
     
-        width: 280px;
-        height: 660px;
-        border: 1px solid ;
-        background-color: #000;
-        border-radius: 5px;
-        box-shadow: 0 0 8px  #000;
-        
-    }
-    .heading{
-        color: white;
-        text-transform: uppercase;
-        text-align: center;
-        text-shadow: 0 0 8px #fff;
-        background-color: #000;
-       transform: rotate(90deg); 
-       width: 235%;
-       font-size: 16px; 
-       z-index: 30;
-       position: relative;
-       top:270px;
-       left: -100px;
-       padding: 1px 0;
+    display: inline-block;
+    margin-left:20px;
+    margin-top:90px;
+}
+.black{
+    color: #fff;
+    display: inline-block;
+    margin-left:10px;
+    margin-top:30px;
+}
+.active{
+    background-color: gray;
+} 
+@media screen and (max-width:600px) {
 
-    }    
-    .pianowhitekey{
+
+    .pianoContainer{
+     
+    width:300px;
+    height: 460px;
+   background-color: #000;
+   box-shadow: 0 0 6px #fff;
+    }
+    
+.heading{
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: 0 0 3.5px  #fff;
     transform: rotate(90deg);
-        width: 40%;
-        height: 50%;
-        position: relative;
-        display: flex;
-        justify-content: space-evenly;
-        margin-top: -249px;
-        margin-left: -120px;
-        top:285px;
-        left: 0px;
-
-    }
-    .whitekey{
-        margin-left: 4px;
-        padding:10px 24px;
-        width: 50px;
-        height: 45%;
-        margin-top:-70px;
-        background-color: #fff;
-        text-align: center;
-         box-shadow: 0 1px 3px  #fff;
-         border-bottom-left-radius: 4px;
-        border-bottom-right-radius: 4px;
-        }
-        span{
-            display: inline-block;
-            margin-top: 130px;
-            
-        }
-        .black{
-            margin-top: 42px;
-            color: #fff;
+    font-size: 12px;
+    position: relative;
+    top:187px;
+    left:70px;
+    width: 120%;
+}
+.pianokey{
+   width:150%;
+   height: 40%;
+      display: flex;
+    transform: rotate(90deg);
+    position: relative;
     
-        }
-       div{
-           position: relative;
-       }
-        .pianoblackkey{
-        transform: rotate(90deg);
-        width: 50%;
-        height: 25%;
-        position: relative;
-        
-         text-align: center;    
-
-        top:285px;
-        left: 0px;
+    top:48px;
+    left:-130px
+}
+.whitekey{
+    width: 100%;
+    height: 100%;
+    background-color:#fff;
+    border: 2px solid #000;
+    border-bottom: 0;
+    box-sizing: border-box;
     
-        
-    }
-    .blackkey{
-        width: 50px;
-        height: 70%;
-        background-color:#000;
-        z-index: 15;
-       
-        border-bottom-left-radius: 4px;
-        border-bottom-right-radius: 4px;
-        
+    
+    transform: rotate(0deg);
+   
 }
-.pianoblackkey div:nth-child(1){
-   left: -470px;
-   top:-33px;
-
-
+.blackkey{
+    width: 50%;
+    height: 53%;
+    background-color: #000;
+    margin-left: -30px;
+    margin-right: -20px;
+    z-index: 10;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    transform: rotate(0deg);
+    
+    
 }
-.pianoblackkey div:nth-child(2){
-    left: -465px;
-    top:-85px;
- 
+span{
+    
+    display: inline-block;
+    margin-left:15px;
+    margin-top:150px;
 }
-.pianoblackkey div:nth-child(3){
-    left: -460px;
-    top:-140px;
+.pianokey div:last-child{
+    width: 70%;
+}
  
-} 
-.pianoblackkey div:nth-child(4){
-    left: -450px;
-    top:-190px;
- 
-} 
-.pianoblackkey div:nth-child(5){
-    left: -443px;
-    top:-243px;
-
-} 
-.pianoblackkey div:nth-child(6){
-    left: -435px;
-    top:-296px;
-
-} 
-.pianoblackkey div:nth-child(7){
-    left: -428px;
-    top:-347px;
-
-} 
-.pianoblackkey div:nth-child(8){
-    left: -422px;
-    top:-399px;
-} 
-.pianoblackkey div:nth-child(9){
-    left: -420px;
-    top:-453px;
-
-} 
 .active{
-    background-color:grey;
+    background-color: gray;                  
 } 
-.whitekey:active,.blackkey:active{
-    background-color:grey;
-}
+
 } 
